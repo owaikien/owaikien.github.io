@@ -1,3 +1,0 @@
-# owaikien.github.io
-
-Welcome !
