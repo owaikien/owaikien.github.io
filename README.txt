@@ -1,3 +1,3 @@
-Hi!
+Hi ! This is my personal website hosted by github.
 
-Template by: html5up-massively
+Access: [owaikien](owaikien.github.io)
