@@ -1,0 +1,243 @@
+/* Light theme */
+:root {
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --link-color: #0066cc;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark theme */
+.dark-theme {
+  --background-color: #333;
+  --text-color: #f5f5f5;
+  --link-color: #bb86fc; /* Adjusted for better visibility in dark mode */
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.profile-pic {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-header {
+  text-align: left; /* Align text to the left */
+  padding: 20px; /* Add padding around the content */
+}
+
+#theme-toggle {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+
+h1 {
+  margin: 10px 0;
+  font-size: 2em;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 40px 0 20px;
+  margin-top: 20px;
+}
+
+h1, h2, h3 {
+  text-align: left;
+  font-weight: 700; /* Making headings bold */
+}
+
+.bio {
+  max-width: 800px;
+}
+
+.work-experience {
+  display:flex;
+  margin-bottom: 60px;
+  margin-left: 80px;
+}
+
+.language-title {
+  margin-bottom: 15px;
+  margin-left: 80px;
+}
+
+.projects {
+  display:flex;
+  margin-bottom: 60px;
+  margin-left: 80px;
+}
+
+.programming {
+  margin: 5px 0; /* Add a slight margin between list items */
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive; /* Use a more playful, creative font */
+  color: #6F42C1; /* Slightly lighter text color for list items */
+  font-size: 15px; /* Slightly smaller font size for list items */
+}
+
+.dark-theme .programming {
+  color: #ADD8E6 ; /* This is for dark mode */
+}
+
+.language-titles {
+  margin-bottom: 60px;
+  margin-left: 80px;
+  justify-content: center;
+}
+
+.language-icons img {
+  height: 50px; /* example size */
+  width: auto;
+  margin: 5px; /* example spacing */
+  flex-wrap: wrap; /* This will allow icons to wrap to the next line */
+  justify-content: center; /* This centers the icons in the container */
+  align-items: center; /* This vertically centers the icons in their line */
+}
+
+.miscellaneous{
+  display:flex;
+  margin-bottom:15px; 
+  margin-left: 80px
+}
+
+.miscellaneous-title{
+  justify-content: center;
+  display:flex;
+  margin-left: 80px
+}
+
+.miscellaneous-elements{
+  display:block;
+  margin-bottom:60px; 
+  margin-left: 80px;
+  align-items: center;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none; /* Removing underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Adding underline on hover for better user experience */
+}
+
+.description {
+  flex: 1;
+  max-width: 100%;
+  padding-left: 20px; /* Adjusting the maximum width of the description */
+}
+
+.year {
+  flex: 0.5;
+  text-align: center;
+  padding-right: 30px;
+  border-right: 2px solid #ccc;
+}
+
+.description-lstm {
+  display: flex;
+  flex-wrap: wrap; /* This will allow items to wrap onto the next line if not enough space */
+  gap: 20px; /* This adds space between the flex items */
+  align-items: flex-start; /* Aligns items to the top */
+}
+
+.list-container {
+  flex: 1; /* Allows the list to grow and fill available space */
+  min-width: 250px; /* Minimum width of the list before it allows wrapping */
+}
+
+.image-container {
+  flex: 1; /* Allows the image container to grow */
+  min-width: 250px; /* Minimum width for the image container */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures the image is responsive and doesn't overflow */
+  height: auto; /* Keeps image aspect ratio */
+}
+
+
+.default-style {
+  text-align: left;
+}
+
+.year-image-horizontal {
+  max-width: 100%;  /* Ensure image does not overflow */
+  height: auto;     /* Maintain aspect ratio */
+  margin-top: 10px; /* Add some space between the image and the text */
+  height: 70%;
+  width: 90%;
+  max-height: 100%;
+  max-width: 100%
+}
+
+.year-image-vertical {
+  max-width: 100%;  /* Ensure image does not overflow */
+  height: auto;     /* Maintain aspect ratio */
+  margin-top: 10px; /* Add some space between the image and the text */
+  height: 55%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%
+}
+
+
+.list-container li {
+  margin-right: 20px; /* Add some space between the list items */
+  /* Additional styles for your list items */
+}
+
+/* Ensure that text within each list item is aligned to the left */
+.list-container li {
+  text-align: left;
+}
+
+
+@media (max-width: 600px) {
+  .work-experience {
+      flex-direction: column;
+  }
+
+  .year {
+      text-align: left;
+      padding: 0;
+      border: none;
+      margin-bottom: 10px;
+  }
+
+  .description {
+      padding: 0;
+  }
+
+}

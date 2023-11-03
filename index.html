@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wai Kien's</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="owaikien.github.io/css_root/flaticon.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </head>
+
+
+    <body class = 'profile'>
+        <div>
+            <button id = 'theme-toggle'>💡</button>
+            <script src = "assets/js/button.js"></script>
+        </div>
+
+        <div class="profile-header">
+            <img src="assets/images/pandapic.png" class="profile-pic"/>
+            <div>
+                <h1>Wai Kien</h1>
+                <h4 class="default-style">Biomedical Science background // Data Enthusiast</h4>
+            </div>
+
+            <div class="bio">
+                <p>
+                Hihi. I'm Wai Kien.
+                I like learning, data and learning with data. 
+                </p>
+
+                <p>
+                I'm currently working as a Data / Business Analyst.
+                In my opinion, the data industry is mainly classifed into 3 spectrums: data engineer ⇄ data analyst ⇄  
+                data scientist. 
+                </p>
+
+                <p>I am eager to explore all 3 and ultimately specialise in one of them 👨🏻‍💻 
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <h2 class="language-title">Work Experience</h2>
+            <div class = 'work-experience'>
+                <div class="year"> <h4>2023 - present</h4> 
+                    <a href = 'assets/images/shopee.JPG' target = "_blank">
+                        <img src="assets/images/shopee.JPG" alt="mecp2" class="year-image-horizontal"/></a>
+
+                        <figcaption style="font-size:15px">Shopee!</figcaption>
+                </div>
+                <div class="description">
+                    <h3><a href="https://shopeepay.com.my/">Business Intelligence - ShopeePay</a> & <a href="https://www.seamoney.com/"> Sea Money</a></h3>
+                    <h4 style="text-align:left">Conducting data-driven business iterations for Fintech</h4>
+                    <p class="programming">Python • PrestoSQL • MSExcel • Statistics</p>
+                </div>
+            </div>
+
+            <div class = 'work-experience'>
+                <div class = 'year'> <h4>2021 - 2022</h4>
+                    <a href = 'assets/images/mecp2.png' target = "_blank">
+                        <img src="assets/images/mecp2.png" alt="mecp2" class="year-image-vertical"/></a>
+                        <figcaption style="font-size: 13px">In Layman terms: <b>A.</b> (Left) MeCP2 stops growth by binding to DNA and recruit "helpers". (Right) MeCP2 binds to DNA and stops growth.
+                            <b>B.</b> We add MeCP2 into controlled bacteria without "helpers", and see if it stops growth.
+                        </figcaption>
+                </div>
+                
+                <div class = 'description'>
+                    <h3><a href="https://lms.mrc.ac.uk/">Research Placement - MRC London Institute of Medical Sciences</a></h3>
+                    <h4 style="text-align:left">Investigating epigenetics mechanisms</h4>
+                    <p>I joined the lab of Prof. Peter Sarkies that focuses on epigenetics and evolution.</p>
+                    <p>During my one year, I investigated this protein called MeCP2. It is known that loss of MeCP2 leads to a serious genetic brain disorder known as Rett syndrome. To study this, we made a simple model in bacteria E. coli, and we discovered that MeCP2 interfers with the growth of E. coli by incorrectly turning on and off some genes in E. coli. (Click here to read more) </p>
+                    <p class="programming"> MSExcel • R (DESeq2, clusterProfiler, AnnotationDbi, seqinr, ggplot2) • Differential Expression Analysis • Gene Ontology Analysis • Statistics</p>
+                </div>
+            </div>
+        </br>
+
+            <h2 class="language-title">Projects</h2>
+            <div class="projects">
+                <div class="year"><h4> 2023 </h4>
+                    <a href = 'assets/images/disruption.png' target = "_blank">
+                        <img src="assets/images/disruption.png" alt="spchain" class="year-image-horizontal"/>
+                    </a>
+                </div>
+                <div class="description">
+                    <h3><a href="https://github.com/owaikien/predict-crisis-supplychain">Predict Supply Chain Disruption</a></h3>
+                    <p>Using disaster tweets datasets to train machine learning models that could predict 
+                        supply chain disruption during the event of a disaster.</p>
+                    <p class="programming">Python • Natural Language Processing</p>
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="year"><h4> 2023 </h4>
+                    <br>
+                    <a href = 'assets/images/bitcoin-predict.png' target = "_blank">
+                        <img src="assets/images/bitcoin-predict.png" alt="bitcoin" class="year-image-vertical"/>
+                    </a>
+                </div>
+
+                <div class="description">
+                    <h3><a href="https://github.com/owaikien/predict-crisis-supplychain">LSTM Bitcoin Prediction</a></h3>
+                    <p>Building a Long Short-Term Memory (LSTM) neural network model that predicts $BTC close price, this is also known as multivariate time series forecasting.</p>
+                    <p>Workflow wise, I fed the following data into the model and ask it to predict future price:</p>
+                    <div class="description-lstm">
+                        <div class="list-container">
+                            <ul>
+                                <li>Historical $BTC Price and Volume</li>
+                                <li>How many people are holding >1000 $BTC</li>
+                                <li>$BTC mining hashrate and difficulty</li>
+                                <li>Number of active $BTC addresses</li>
+                                <li>Transaction Counts</li>
+                            </ul>
+                        </div>
+
+                        <div class="list-container">
+                            <a href = 'assets/images/lstm.png' target = "_blank">
+                                <img src="assets/images/lstm.png" alt="bitcoin" width="90%" height="60%"/>
+                            </a>                        
+                        </div>
+                    </div>
+                    <p>I then implemented a simple trading simulation to backtest the model. It outperformed "random long and short" strategy
+                        by <b>~8%</b> and "buy and hold" strategy by <b>~300%</b>.
+                    </p>
+                    <p class="programming">Python • pandas • numpy • TensorFlow • Keras</p>
+                </div>
+            </div>
+
+            <h2 class="language-title">Languages</h2>
+            <div class="language-titles">
+                <div class = "language-icons">
+                    <img src="assets/images/icons/python.png" alt="Python"/>
+                    <img src="assets/images/icons/r.png" alt="R"/>
+                    <img src="assets/images/icons/database.png" alt="SQL"/>
+                    <img src="assets/images/icons/html-5.png" alt="HTML"/>
+                    <img src="assets/images/icons/css-3.png" alt="CSS"/>
+                    <img src="assets/images/icons/js.png" alt="JS"/>
+                </div>
+            </div>
+
+            <h2 class="language-title">Socials</h2>
+            <div class="language-titles">
+                <div class="language-icons">
+                    <a href="https://www.linkedin.com/in/owaikien/"><img src="assets/images/icons/linkedin.png" alt="linkedin"/></a>
+                    <a href="https://medium.com/@kienong2000"><img src="assets/images/icons/medium.png" alt="medium"/></a>
+                    <a href="https://github.com/owaikien"><img src="assets/images/icons/github.png" alt="github"/></a>
+                    <a href="https://twitter.com/owaikien"><img src="assets/images/icons/twitter.png" alt="twitter"/></a>
+                    <a href="mailto:kienong2000@gmail.com"><img src="assets/images/icons/gmail.png" alt="gmail"/></a>
+                </div>
+            </div>
+            
+            <h2 class="miscellaneous">Miscellaneous</h2>
+            <div class="miscellaneous-title">
+                <div class="miscellaneous-elements">
+                    <h3 style="text-align: center;">Something I'm proud of</h3>
+                    <a href="https://data.typeracer.com/pit/profile?user=feikien99&ref=badge" target="_top"><img src="https://data.typeracer.com/misc/badge?user=feikien99" border="0" alt="TypeRacer.com scorecard for user feikien99" height=82% width=100% style="max-width: 100%; max-height: 100%;"/></a>
+                </div>
+
+
+                <div class="miscellaneous-elements">
+                    <h3 style="text-align: center;">Something I'm not proud of</h3>
+                        <p><img src="https://leetcard.jacoblin.cool/owaikien?theme=nord&font=Sarabun&ext=activity" alt="Leetcode Stats"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
