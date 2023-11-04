@@ -33,13 +33,13 @@ body {
 
 body.dark-mode {
   background-color: #121212;
-  --text-color: #f5f5f5;
+  --text-color: #ffffff;
   --link-color: #bb86fc; /* Adjusted for better visibility in dark mode */
 }
 
 body.dark-mode button.theme-toggle {
   background-color: #666;
-  color: #fff;
+  --text-color: #fff;
 }
 
 /* ... other styles ... */
