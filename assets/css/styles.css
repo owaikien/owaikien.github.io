@@ -39,7 +39,6 @@ body.dark-mode {
 
 body.dark-mode button.theme-toggle {
   background-color: #666;
-  --text-color: #fff;
 }
 
 /* ... other styles ... */
