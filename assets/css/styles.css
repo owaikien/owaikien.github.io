@@ -14,12 +14,35 @@ body {
   padding: 0;
 }
 
-/* Dark theme */
-.dark-theme {
-  --background-color: #333;
+.theme-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.theme-toggle {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+body.dark-mode {
+  background-color: #121212;
   --text-color: #f5f5f5;
   --link-color: #bb86fc; /* Adjusted for better visibility in dark mode */
 }
+
+body.dark-mode button.theme-toggle {
+  background-color: #666;
+  color: #fff;
+}
+
+/* ... other styles ... */
 
 .profile {
   display: flex;
@@ -29,6 +52,8 @@ body {
   font-family: 'Roboto';
   font-size: 16px;
 }
+
+
 
 .profile-pic {
   max-width: 150px;
@@ -42,18 +67,6 @@ body {
   padding: 20px; /* Add padding around the content */
 }
 
-#theme-toggle {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
 
 
 h1 {
@@ -105,7 +118,7 @@ h1, h2, h3 {
   font-size: 15px; /* Slightly smaller font size for list items */
 }
 
-.dark-theme .programming {
+.dark-mode .programming {
   color: #ADD8E6 ; /* This is for dark mode */
 }
 
