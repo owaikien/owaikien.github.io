@@ -33,8 +33,13 @@ body {
 
 body.dark-mode {
   background-color: #121212;
+  color: var(--text-color); /* This will ensure that all text inside the body inherits this color unless overridden */
   --text-color: #ffffff;
   --link-color: #bb86fc; /* Adjusted for better visibility in dark mode */
+}
+
+.dark-mode h1, h2, h3, p, li {
+  color: var(--text-color);
 }
 
 body.dark-mode button.theme-toggle {
