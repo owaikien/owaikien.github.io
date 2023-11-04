@@ -38,10 +38,6 @@ body.dark-mode {
   --link-color: #bb86fc; /* Adjusted for better visibility in dark mode */
 }
 
-.dark-mode h1, h2, h3, p, li {
-  color: var(--text-color);
-}
-
 body.dark-mode button.theme-toggle {
   background-color: #666;
 }
