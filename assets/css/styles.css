@@ -91,7 +91,7 @@ h1, h2, h3 {
 }
 
 .bio {
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .work-experience {
@@ -209,8 +209,8 @@ a:hover {
   max-width: 100%;  /* Ensure image does not overflow */
   height: auto;     /* Maintain aspect ratio */
   margin-top: 10px; /* Add some space between the image and the text */
-  height: 70%;
-  width: 90%;
+  height: auto;
+  width: 85%;
   max-height: 100%;
   max-width: 100%
 }
@@ -219,8 +219,8 @@ a:hover {
   max-width: 100%;  /* Ensure image does not overflow */
   height: auto;     /* Maintain aspect ratio */
   margin-top: 10px; /* Add some space between the image and the text */
-  height: 55%;
-  width: 100%;
+  height: 70%;
+  width: 80%;
   max-height: 100%;
   max-width: 100%
 }
