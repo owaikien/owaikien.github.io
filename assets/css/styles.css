@@ -98,7 +98,12 @@ body.dark-mode button.theme-toggle {
 }
 
 .profile-info h1{
-  margin: 0.44em 3em 0.2em 0; /* adjust as needed */
+  margin: 0.44em 0em 0.2em 0; /* adjust as needed */
+  text-align: center;
+}
+
+.profile-info h4 {
+  margin: 0.44em 0em 0.2em 0em; /* adjust as needed */
   text-align: center;
 }
 
