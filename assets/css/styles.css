@@ -1,4 +1,4 @@
-/* Light theme */
+
 :root {
   --background-color: #f5f5f5;
   --text-color: #333;
@@ -8,7 +8,7 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter';
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -22,8 +22,8 @@ body {
 }
 
 .theme-toggle {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #041d78;
+  color: #f30000;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -43,13 +43,13 @@ body.dark-mode button.theme-toggle {
 }
 
 /* ... other styles ... */
-
+/* 
 .profile {
   display: flex;
   justify-content: center;
   padding: 40px;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: 'Inter';
   font-size: 16px;
 }
 
@@ -64,7 +64,48 @@ body.dark-mode button.theme-toggle {
 
 .profile-header {
   text-align: left; /* Align text to the left */
-  padding: 20px; /* Add padding around the content */
+  /* padding: 20px; Add padding around the content */
+/* } */ 
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0 20px 0;
+  background: none;
+}
+
+.profile-pic-container {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  /* border-radius: 50%; */
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+.profile-info {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.profile-info h1{
+  margin: 0.44em 3em 0.2em 0; /* adjust as needed */
+  text-align: center;
+}
+
+.bio {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -90,30 +131,124 @@ h1, h2, h3 {
   font-weight: 700; /* Making headings bold */
 }
 
-.bio {
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   max-width: 900px;
+  margin: 0 auto 8px auto;
+  padding: 0 24px;
 }
 
-.work-experience {
-  display:flex;
-  margin-bottom: 60px;
-  margin-left: 80px;
+.work-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.work-dates {
+  font-size: 1em;
+  /* color: #000000; */
+  font-weight: 500;
+}
+
+.work-content {
+  display: flex;
+  gap: 24px; /* smaller gap */
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  padding: 0 24px;
+}
+
+.work-description {
+  flex: 0 0 60%;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures tech stack stays at the bottom */
+  min-height: 320px; /* Adjust as needed for your slider height */
+  padding-bottom: 8px;
+}
+
+.work-tech {
+  margin-top: 16px;
+}
+
+.work-slider {
+  flex: 0 0 40%;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive for mobile and tablets */
+@media (max-width: 1000px) {
+  .work-header,
+  .work-content {
+    max-width: 98vw;
+    padding: 0 8px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .work-content {
+    flex-direction: column;
+    gap: 12px;
+    max-width: 100vw;
+    padding: 0 4vw;
+  }
+  .work-description, .work-slider {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .work-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 4vw;
+    gap: 2px;
+  }
 }
 
 .language-title {
   margin-bottom: 15px;
-  margin-left: 80px;
+  margin-left: 18vw;   /* Responsive left indent: 6% of viewport width */
+  font-size: 1.55em;
+  font-weight: 700;
 }
 
-.projects {
-  display:flex;
-  margin-bottom: 60px;
-  margin-left: 80px;
+/* On small screens, reduce the indent */
+@media (max-width: 1000px) {
+  .language-title {
+    margin-left: 1vw;
+    font-size: 1.5em;
+  }
+}
+
+.projects-list {
+  list-style: disc inside;
+  margin: 0 0 40px 0;      /* Remove large left margin */
+  padding-left: 2em;       /* Small, consistent indent for bullets */
+  font-size: 1.08em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projects-list a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.projects-list a:hover {
+  text-decoration: underline;
 }
 
 .programming {
   margin: 5px 0; /* Add a slight margin between list items */
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive; /* Use a more playful, creative font */
+  font-family: 'Inter';
   color: #6F42C1; /* Slightly lighter text color for list items */
   font-size: 15px; /* Slightly smaller font size for list items */
 }
@@ -135,6 +270,15 @@ h1, h2, h3 {
   flex-wrap: wrap; /* This will allow icons to wrap to the next line */
   justify-content: center; /* This centers the icons in the container */
   align-items: center; /* This vertically centers the icons in their line */
+}
+
+.language-icons {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically (if needed) */
+  flex-wrap: wrap;           /* Allow icons to wrap to next line */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .miscellaneous{
@@ -174,6 +318,7 @@ a:hover {
 .year {
   flex: 0.5;
   text-align: center;
+  font-size: 15px;
   padding-right: 30px;
   border-right: 2px solid #ccc;
 }
@@ -237,20 +382,89 @@ a:hover {
 }
 
 
-@media (max-width: 600px) {
-  .work-experience {
-      flex-direction: column;
-  }
 
-  .year {
-      text-align: left;
-      padding: 0;
-      border: none;
-      margin-bottom: 10px;
-  }
-
-  .description {
-      padding: 0;
-  }
-
+.slider {
+  width: 700px;
+  max-width: 100%;
+  height: 350px; /* or 400px, adjust as you like */
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eee;
+  border-radius: 10px;
+  position: relative;
 }
+
+
+.slider button {
+  /* background: #007bff; */
+  color: black;
+  border: none;
+  font-size: 1.5em;
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+  position: relative;
+  height: 60px;
+  align-self: center;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(.4,2,.6,1), transform 0.6s cubic-bezier(.4,2,.6,1);
+  transform: translateX(40px) scale(0.98);
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;      /* Stack image and caption vertically */
+  align-items: center;         /* Center horizontally */
+  justify-content: center;     /* Center vertically */
+}
+
+.slide.active {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  z-index: 2;
+  pointer-events: auto;
+  position: absolute;
+}
+
+.slide-caption {
+  position: static;
+  background: none;
+  color: #222;           /* Black/dark for light mode */
+  padding: 12px 0 0 0;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 0;
+  opacity: 1;
+  pointer-events: none;
+  width: 100%;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 90%; /* leave some space for caption if needed */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  #slider {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+
