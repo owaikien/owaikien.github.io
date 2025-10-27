@@ -26,4 +26,27 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.querySelectorAll('.quote-word').forEach(function(word) {
+  const original = word.textContent;
+  const alt = word.getAttribute('data-alt');
+  let isPermanent = false;
 
+  word.addEventListener('mouseenter', function() {
+    if (!isPermanent) word.textContent = alt;
+  });
+
+  word.addEventListener('mouseleave', function() {
+    if (!isPermanent) word.textContent = original;
+  });
+
+  word.addEventListener('click', function() {
+    isPermanent = !isPermanent;
+    if (isPermanent) {
+      word.textContent = alt;
+      word.style.color = '#000000'; // Change color when toggled
+    } else {
+      word.textContent = original;
+      word.style.color = '#6366f1'; // Restore original purple
+    }
+  });
+});
